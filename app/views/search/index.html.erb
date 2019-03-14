@@ -1,0 +1,97 @@
+<header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          
+            <div class="form-row color">
+              <div class="col-12 col-md-9 mb-2 mb-md-0 col-md-3">
+                <%= form_for :anything, url: "/product", method: :get do |f| %>
+
+                <%= f.text_field :name, class: "form-control form-control-lg", id: "provider-json", placeholder: "L'article à comparer" %> 
+
+                
+              </div>
+              <div class="col-12 col-md-3">
+                  <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
+
+<% end %>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <!-- <div class="features-icons-icon d-flex"> -->
+              <!-- <i class="icon-screen-desktop m-auto text-primary"></i> -->
+              
+              <%= image_tag "Comparer.png",size: "150x150" %>
+
+           
+            <!-- </div> -->
+            <h3>Comparez</h3>
+            <p class="lead mb-0">Différenciez les prix d'un même produit.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <!-- <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div> -->
+            <%= image_tag "Pointer.png",size: "150x150" %>
+            <h3>Choisissez</h3>
+            <p class="lead mb-0">Ajouter à votre panier Amazon le produit le moins cher.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <%= image_tag "Commander.png",size: "150x150" %>
+            <h3>Commandez</h3>
+            <p class="lead mb-0">Validez votre panier et faites vous expédier par Amazon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <%= image_tag "prix.png", class:"col-lg-6 order-lg-2 text-white showcase-img"%>
+
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text padio">
+          <h2>Des produits à bas prix</h2>
+          <p class="lead mb-0 texto">Comparez les différents prix d'un même produit sur nos quatre marketplaces dans l'UE (Amazon.fr, Amazon.de, Amazon.it et Amazon.es), puis choisissez le moins cher!</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        
+        <%= image_tag "map.png", class:"col-lg-6 text-white showcase-img"%>
+        <div class="col-lg-6 my-auto showcase-text padio">
+          <h2>Un seul compte pour toute l'Europe</h2>
+          <p class="lead mb-0 texto">Avec un seul compte, achetez dans toute l'Europe grâce à nos quatre marketplaces dans l'UE (Amazon.fr, Amazon.de, Amazon.it et Amazon.es).</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <%= image_tag "Transport.png", class:"col-lg-6 order-lg-2 text-white showcase-img"%>
+
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text padio">
+          <h2>Le réseau logistique hors-parir d'Amazon</h2>
+          <p class="lead mb-0 texto">Béneficiez du réseau logistique d'amazon pour n'importe quel achat effectué sur une de nos quatre marketplaces dans l'UE (Amazon.fr, Amazon.de, Amazon.it et Amazon.es).</p>
+        </div>
+      </div>
+    </div>
+  </section>

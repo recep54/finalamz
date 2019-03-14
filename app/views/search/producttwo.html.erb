@@ -1,0 +1,138 @@
+<!-- ###################### methode 1  -->
+<h1><%= @product %></h1>
+
+<div class="prod">
+<%# 4.times do %>
+
+<div class="card" style="width: 18rem;">
+    
+  <%= image_tag @image, class:"card-img-top"%>
+  <div class="card-body">
+
+  
+    <p><span><%= @price_fr %></span><br/>
+      
+      <%= link_to "voir le produit", @lien_fr, class: "btn btn-primary" %> Amazon FR
+    </p>
+
+  </div>
+</div>
+
+<% if @price_de != "none" %>
+  <div class="card" style="width: 18rem;">
+    
+    <%= image_tag @image, class:"card-img-top"%>
+    <div class="card-body">
+      
+    <p><span><%= @price_de %></span><br/>
+    <%= link_to "voir le produit", @lien_de, class: "btn btn-primary" %>       Amazon DE</p>
+      
+  </div>
+</div>    
+
+<%end%>
+
+<% if @price_es != "none" %>
+  <div class="card" style="width: 18rem;">
+    
+    <%= image_tag @image, class:"card-img-top"%>
+    <div class="card-body">
+      
+    <p><span><%= @price_es %></span><br/>
+    <%= link_to "voir le produit", @lien_es, class: "btn btn-primary" %>       Amazon ES</p>
+      
+  </div>
+</div>    
+
+<%end%>
+
+<% if @price_it != "none" %>
+  <div class="card" style="width: 18rem;">
+    
+    <%= image_tag @image, class:"card-img-top"%>
+    <div class="card-body">
+      
+    <p><span><%= @price_it %></span><br/>
+    <%= link_to "voir le produit", @lien_it, class: "btn btn-primary" %>       Amazon IT</p>
+      
+  </div>
+</div>    
+
+<%end%>
+
+
+
+</div>
+
+
+<!-- ################################### 4 méthode  -->
+<div class="card" style="width: 18rem;">
+    
+    <%= image_tag @image, class:"card-img-top"%>
+    <div class="card-body">
+
+      <h1 class="card-text"><%= @product %></h1>
+      <p><span><%= @price_fr %></span><br/>
+      
+      <%= link_to "voir le produit", @lien_fr, class: "btn btn-primary" %> Amazon FR
+
+
+      </p>
+
+      <% if @price_de != "none" %>
+      <p><span><%= @price_de %></span><br/>
+      <%= link_to "voir le produit", @lien_de, class: "btn btn-primary" %>       Amazon DE</p>
+        <p></p>
+        <p></p>
+
+      <%end%>
+      <% if @price_es != "none" %>
+
+      <p><span><%= @price_es %></span><br/>
+      <%= link_to "voir le produit", @lien_es, class: "btn btn-primary" %>       Amazon ES</p>
+        <p></p>
+        <p></p>
+
+      <%end%>
+      <% if @price_it != "none" %>
+      <p><span><%= @price_it %></span><br/>
+      <%= link_to "voir le produit", @lien_it, class: "btn btn-primary" %>       Amazon IT</p>
+        <p></p>
+        <p></p>
+
+      <%end%>
+
+    </div>
+
+  </div>
+
+
+
+
+<p></p>
+<hr>
+<h3> Nouvelle recherche</h3>
+<div class="card" style="width: 18rem;">
+              
+<%= form_for :anything, url: "/product", method: :get do |f| %>
+                <!-- <input class="form-control form-control-lg" placeholder="Enter your email..."> -->
+                <%= f.text_field :name, class: "form-control form-control-lg", id: "provider-json" %>
+
+
+              
+              
+                <!-- <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button> -->
+                <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
+
+                
+            
+
+            <% end %>
+                
+            
+
+            </div>
+            
+</div>
+
+</div>
