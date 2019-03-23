@@ -1,13 +1,58 @@
-<h1>Chose</h1>
+<section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
 
+      <% @po.each do |f| %>
 
-
-<% @po.each do |f| %>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%= f["image"] %> >
+        <div class="col-lg-3">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            
+              
+             <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%= f["image"] %> >
     </iframe> <br/>
 
-    <%= f["url"] %><br/>
-    <%= link_to "hey", product_path(f["url"]) %><br/>
+    
+    <%= link_to "Comparer", product_path(f["url"]),  class: "btn btn-block btn-lg btn-primary" %><br/>
+
+           
+            
+            
+          </div>
+        </div>
+
 <%end %>
 
-<%= link_to "accueil", root_path %>
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="ti">Nouvelle recherche</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          
+            <div class="form-row color">
+              <div class="col-12 col-md-9 mb-2 mb-md-0 col-md-3">
+                <%= form_for :anything, url: "/producti", method: :get do |f| %>
+
+                <%= f.text_field :name, class: "form-control form-control-lg", id: "provider-json", placeholder: "L'article à comparer" %> 
+
+                
+              </div>
+              <div class="col-12 col-md-3">
+                  <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
+
+<% end %>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>

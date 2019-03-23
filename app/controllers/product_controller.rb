@@ -9,6 +9,15 @@ class ProductController < ApplicationController
 
   def show
     @prod = Product.find(params[:id])
+    @asin_code = @prod.asin
+
+
+
+    @image_fr = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ac&ref=tf_til&ad_type=product_link&tracking_id=iraz-21&marketplace=amazon&region=FR&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    @image_es = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=ES&source=ac&ref=tf_til&ad_type=product_link&tracking_id=iraz-21&marketplace=amazon&region=ES&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    @image_de = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=tf_til&ad_type=product_link&tracking_id=iraz-21&marketplace=amazon&region=DE&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    @image_it = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IT&source=ac&ref=tf_til&ad_type=product_link&tracking_id=iraz-21&marketplace=amazon&region=IT&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
+    
   end
 
 

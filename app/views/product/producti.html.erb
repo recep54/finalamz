@@ -55,32 +55,35 @@
   </section>
 
 
-<p></p>
-<hr>
 
 
-<h3> Nouvelle recherche</h3>
-<div class="card" style="width: 18rem;">
-              
-<%= form_for :anything, url: "/producti", method: :get do |f| %>
-                <!-- <input class="form-control form-control-lg" placeholder="Enter your email..."> -->
-                <%= f.text_field :name, class: "form-control form-control-lg", id: "provider-json" %>
 
 
-              
-              
-                <!-- <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button> -->
-                <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
+<footer class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="ti">Nouvelle recherche</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          
+            <div class="form-row color">
+              <div class="col-12 col-md-9 mb-2 mb-md-0 col-md-3">
+                <%= form_for :anything, url: "/producti", method: :get do |f| %>
+
+                <%= f.text_field :name, class: "form-control form-control-lg", id: "provider-json", placeholder: "L'article à comparer" %> 
 
                 
-            
+              </div>
+              <div class="col-12 col-md-3">
+                  <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
 
-            <% end %>
-                
-            
-
+<% end %>
+              </div>
             </div>
-            
-</div>
-
-</div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
