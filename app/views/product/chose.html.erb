@@ -1,0 +1,13 @@
+<h1>Chose</h1>
+
+
+
+<% @po.each do |f| %>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%= f["image"] %> >
+    </iframe> <br/>
+
+    <%= f["url"] %><br/>
+    <%= link_to "hey", product_path(f["url"]) %><br/>
+<%end %>
+
+<%= link_to "accueil", root_path %>

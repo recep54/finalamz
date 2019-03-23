@@ -1,0 +1,102 @@
+
+
+<h1><%=@prod.title%></h1>
+
+<div class="prod_cent">
+<div class= "prod">
+
+    
+
+    <!-- <p>hey</p> -->
+    
+
+    <!-- <p>hey</p> -->
+    
+
+    <!-- <p>hey</p> -->
+    
+
+</div>
+</div>
+
+<section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <!-- <div class="features-icons-icon d-flex"> -->
+              <!-- <i class="icon-screen-desktop m-auto text-primary"></i> -->
+              
+              <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_fr%> >
+    </iframe>
+
+           
+            <!-- </div> -->
+            <h3>Amazon France</h3>
+            
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <!-- <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div> -->
+            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_es%> >
+    </iframe>
+            <h3>Amazon Espagne</h3>
+            
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_de%> >
+    </iframe>
+    
+            <h3>Amazon Allemange</h3>
+            <!-- <p class="lead mb-0">Validez votre panier et faites vous expédier par Amazon.</p> -->
+          </div>
+        </div>
+
+         <div class="col-lg-3">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_it%> >
+    </iframe>
+            <h3>Amazon Italie</h3>
+            <!-- <p class="lead mb-0">Validez votre panier et faites vous expédier par Amazon.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<p></p>
+<hr>
+
+
+<h3> Nouvelle recherche</h3>
+<div class="card" style="width: 18rem;">
+              
+<%= form_for :anything, url: "/producti", method: :get do |f| %>
+                <!-- <input class="form-control form-control-lg" placeholder="Enter your email..."> -->
+                <%= f.text_field :name, class: "form-control form-control-lg", id: "provider-json" %>
+
+
+              
+              
+                <!-- <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button> -->
+                <%= f.submit value="Send", class: "btn btn-block btn-lg btn-primary"%>
+
+                
+            
+
+            <% end %>
+                
+            
+
+            </div>
+            
+</div>
+
+</div>
