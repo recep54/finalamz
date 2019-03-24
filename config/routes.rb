@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get '/countries', to: 'product#countries'
   get '/chose', to: 'product#chose'
   get 'no', to: 'product#no'
+  get '/objet', to: 'product#objet'
+  get '/mention', to: 'product#mention'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
