@@ -11,10 +11,10 @@ class ProductController < ApplicationController
     @prod = Product.find(params[:id])
     @asin_code = @prod.asin
 
-    id_fr = "iraza-21"
-    id_es = "iraza06-21"
-    id_de = "iraza01-21"
-    id_it = "iraza0b7-21"
+    id_fr = "iraz54-21"
+    id_es = "iraz540a-21"
+    id_de = "iraz540c-21"
+    id_it = "iraz540f-21"
 
     @image_fr = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ac&ref=tf_til&ad_type=product_link&tracking_id=#{id_fr}&marketplace=amazon&region=FR&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
     @image_es = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=ES&source=ac&ref=tf_til&ad_type=product_link&tracking_id=#{id_es}&marketplace=amazon&region=ES&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
@@ -48,10 +48,10 @@ class ProductController < ApplicationController
     # @lien_it = "https://www.amazon.it/gp/product/#{@asin_code}?ie=UTF8&tag=reckb-21&link_code=wql"
     # 
 
-    id_fr = "iraza-21"
-    id_es = "iraza06-21"
-    id_de = "iraza01-21"
-    id_it = "iraza0b7-21"
+    id_fr = "iraz54-21"
+    id_es = "iraz540a-21"
+    id_de = "iraz540c-21"
+    id_it = "iraz540f-21"
 
     @image_fr = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ac&ref=tf_til&ad_type=product_link&tracking_id=#{id_fr}&marketplace=amazon&region=FR&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
     @image_es = "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=ES&source=ac&ref=tf_til&ad_type=product_link&tracking_id=#{id_es}&marketplace=amazon&region=ES&placement=#{@asin_code}&asins=#{@asin_code}&linkId=c293a17c261adf84253befaf16ca233a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"
